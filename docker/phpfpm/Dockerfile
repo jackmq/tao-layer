@@ -51,7 +51,7 @@ RUN curl -sS https://getcomposer.org/installer | php && \
     chown -R www-data:www-data /var/www/html && \
     chown -R www-data:www-data /var/www/html/config
 
-RUN wget https://hub.taotesting.com/resources/taohub-articles/articles/third-party/MathJax_Install_TAO_3x.sh
+RUN wget --no-check-certificate https://hub.taotesting.com/resources/taohub-articles/articles/third-party/MathJax_Install_TAO_3x.sh
 RUN chmod u+x MathJax_Install_TAO_3x.sh
 RUN ./MathJax_Install_TAO_3x.sh
 
